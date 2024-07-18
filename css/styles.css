@@ -595,11 +595,11 @@ button {
 /*-------------MODAL----------*/
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 80px;
   left: 50%;
   transform: translate(-50%);
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: black;
 }
 
 .modal-form {
