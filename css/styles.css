@@ -591,3 +591,62 @@ button {
 }
 
 /*-------------FOOOTER----------*/
+
+/*-------------MODAL----------*/
+
+.modal {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form {
+  border-radius: 4px;
+  width: 408px;
+  height: 584px;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.modal-form-lable {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  /* margin-bottom: 8px; */
+}
+
+.modal-form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.modal-form-txtarea {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+}
+
+.modal-form-policy {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
