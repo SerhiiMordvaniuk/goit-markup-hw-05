@@ -594,13 +594,22 @@ button {
 
 /*-------------MODAL----------*/
 
-.modal {
+.backdrop {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   padding-top: 80px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal-form {
@@ -653,6 +662,11 @@ button {
   margin-bottom: 24px;
 }
 
+.modal-input-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+
 .modal-form-lable {
   display: block;
   font-weight: 400;
@@ -668,9 +682,8 @@ button {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  margin-bottom: 8px;
   outline: none;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 38px;
 }
 
 .modal-form-input:hover,
@@ -678,6 +691,19 @@ button {
 .modal-form-txtarea:hover,
 .modal-form-txtarea:focus {
   border: 1px solid #4d5ae5;
+}
+
+.modal-form-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.modal-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-txtarea {
