@@ -459,7 +459,7 @@
         <div class="footer-form-container">
           <p class="footer-accent-txt footer-form-title">Subscribe</p>
           <form class="footer-form">
-            <label for="footer-input" class="footer-input-label">
+            <label class="footer-input-label">
               <input
                 class="footer-input"
                 type="email"
@@ -469,7 +469,7 @@
                 id="footer-input"
                 name="footer-input"
               />
-              <button class="footer-btn" type="submit">
+              <button class="footer-btn" type="submit" id="footer-input-btn">
                 Subscribe
                 <svg class="footer-btn-icon" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-Frame-3"></use>
@@ -482,83 +482,95 @@
     </footer>
 
     <div class="backdrop" data-modal>
-      <div class="modal-form">
+      <div class="modal-container">
         <button type="button" class="modal-closed-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <label class="modal-form-lable" for="modal-form-name">Name</label>
-        <div class="modal-input-field">
-          <input
-            class="modal-form-input"
-            type="text"
-            id="modal-form-name"
-            name="modal-form-name"
-            value=""
-            required
-          />
-          <svg class="modal-icon" width="13" height="13">
-            <use href="./images/icons.svg#icon-user"></use>
-          </svg>
-        </div>
-        <label class="modal-form-lable" for="modal-for-tel">Phone</label>
-        <div class="modal-input-field">
-          <input
-            class="modal-form-input"
-            type="tel"
-            id="modal-for-tel"
-            name="modal-for-tel"
-            value=""
-            required
-          />
-          <svg class="modal-icon" width="13" height="13">
-            <use href="./images/icons.svg#icon-tel"></use>
-          </svg>
-        </div>
-        <label class="modal-form-lable" for="modal-form-email">Email</label>
-        <div class="modal-input-field">
-          <input
-            class="modal-form-input"
-            type="email"
-            id="modal-form-email"
-            name="modal-form-email"
-            required
-            value=""
-          />
-          <svg class="modal-icon" width="13" height="13">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-        </div>
-        <label class="modal-form-lable" for="modal-form-txtarea">Comment</label>
-        <textarea
-          class="modal-form-txtarea"
-          name="modal-form-txtarea"
-          id="modal-form-txtarea"
-          placeholder="Text input"
-        ></textarea>
-        <div>
-          <input
-            class="modal-check visually-hidden"
-            type="checkbox"
-            value="yes"
-            id="modal-check"
-            name="modal-check"
-            checked
-            required
-          />
-          <label for="modal-check" class="modal-check-lable">
-            <span class="check-icon-container">
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-klick"></use>
+        <form class="modal-form">
+          <div class="modal-form-container">
+            <label class="modal-form-lable" for="modal-form-name">Name</label>
+            <div class="modal-input-field">
+              <input
+                class="modal-form-input"
+                type="text"
+                id="modal-form-name"
+                name="modal-form-name"
+                value=""
+                required
+              />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-user"></use>
               </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="modal-form-policy" href="">Privacy Policy</a>
-          </label>
-        </div>
-        <button class="modal-btn" type="submit">Send</button>
+            </div>
+          </div>
+          <div class="modal-form-container">
+            <label class="modal-form-lable" for="modal-for-tel">Phone</label>
+            <div class="modal-input-field">
+              <input
+                class="modal-form-input"
+                type="tel"
+                id="modal-for-tel"
+                name="modal-for-tel"
+                value=""
+                required
+              />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-container">
+            <label class="modal-form-lable" for="modal-form-email">Email</label>
+            <div class="modal-input-field">
+              <input
+                class="modal-form-input"
+                type="email"
+                id="modal-form-email"
+                name="modal-form-email"
+                required
+                value=""
+              />
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-textarea">
+            <label class="modal-form-lable" for="modal-form-txtarea"
+              >Comment</label
+            >
+            <textarea
+              class="modal-form-txtarea"
+              name="modal-form-txtarea"
+              id="modal-form-txtarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div>
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              value="yes"
+              id="modal-check"
+              name="modal-check"
+              checked
+              required
+            />
+            <label for="modal-check" class="modal-check-lable">
+              <span class="check-icon-container">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-klick"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-form-policy" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

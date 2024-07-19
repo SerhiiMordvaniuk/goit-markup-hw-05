@@ -614,14 +614,19 @@ button {
   pointer-events: auto;
 }
 
-.modal-form {
+.modal-container {
   border-radius: 4px;
   width: 408px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  padding: 24px;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-closed-btn {
@@ -636,6 +641,10 @@ button {
   margin-left: auto;
   margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
 }
 
 .modal-closed-btn:hover,
@@ -661,7 +670,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .modal-input-field {
