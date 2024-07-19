@@ -645,7 +645,7 @@ button {
   background-color: #e7e9fc;
   margin-left: auto;
   margin-bottom: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 24px;
   right: 24px;
@@ -666,6 +666,10 @@ button {
 .modal-close-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-container {
+  margin-bottom: 8px;
 }
 
 .modal-title {
@@ -691,6 +695,7 @@ button {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 
 .modal-form-input {
@@ -698,8 +703,10 @@ button {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  outline: none;
+  outline: transparent;
   padding: 8px 16px 8px 38px;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:hover,
@@ -783,7 +790,7 @@ textarea:placeholder-shown {
 }
 
 .modal-btn {
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   padding: 16px 32px;
@@ -796,8 +803,7 @@ textarea:placeholder-shown {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 24px auto 0 auto;
   display: block;
 }
