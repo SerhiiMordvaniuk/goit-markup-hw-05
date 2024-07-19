@@ -699,6 +699,15 @@ textarea:placeholder-shown {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-check:checked + .modal-check-lable .check-icon-container {
+  border: none;
+  background-color: #404bbf;
+}
+
+.modal-check:checked + .modal-check-lable .check-icon-container .check-icon {
+  fill: #f4f4fd;
+}
+
 .check-icon-container {
   display: flex;
   justify-content: center;
@@ -710,7 +719,7 @@ textarea:placeholder-shown {
 }
 
 .check-icon {
-  fill: red;
+  fill: none;
 }
 
 .modal-check-lable {
