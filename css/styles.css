@@ -729,6 +729,10 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-textarea {
+  margin-bottom: 16px;
+}
+
 .modal-form-txtarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -736,8 +740,10 @@ button {
   height: 120px;
   resize: none;
   padding: 8px 16px;
-  margin-bottom: 16px;
   outline: none;
+  line-height: 1.17;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea:placeholder-shown {
@@ -748,17 +754,19 @@ textarea:placeholder-shown {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-checkbox-container {
+  margin-bottom: 24px;
+}
+
 .modal-check:checked + .modal-check-lable .check-icon-container {
   border: none;
   background-color: #404bbf;
-}
-
-.modal-check:checked + .modal-check-lable .check-icon-container .check-icon {
   fill: #f4f4fd;
 }
 
+
 .check-icon-container {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -766,10 +774,7 @@ textarea:placeholder-shown {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.check-icon {
-  fill: none;
+  fill: transparent;
 }
 
 .modal-check-lable {
@@ -780,6 +785,7 @@ textarea:placeholder-shown {
   letter-spacing: 0.04em;
   color: #8e8f99;
   align-items: center;
+  line-height: 1.17;
 }
 
 .modal-form-policy {
