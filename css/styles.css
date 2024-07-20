@@ -758,7 +758,7 @@ textarea:placeholder-shown {
   margin-bottom: 24px;
 }
 
-.modal-check:checked +label > span {
+.modal-check +label > span {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
